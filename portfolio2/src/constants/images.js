@@ -1,3 +1,5 @@
+import headImg from "../assets/header-img.svg";
+import headerBg from "../assets/banner-bg.png";
 import email from "../assets/email.png";
 import mobile from "../assets/mobile.png";
 import api from "../assets/api.png";
@@ -36,6 +38,8 @@ import skype from "../assets/skype.png";
 import spotify from "../assets/spotify.png";
 
 export default {
+  headerBg,
+  headImg,
   email,
   mobile,
   api,

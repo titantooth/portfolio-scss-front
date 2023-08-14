@@ -1,9 +1,10 @@
 #home {
   position: relative;
-  background: url("../../assets//bgIMG.png");
+  background: url("../../assets/banner-bg.png");
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
+  height: 100vh;
   .app-wrapper {
     padding: 0;
 
@@ -59,9 +60,10 @@
     padding: 1rem 2rem;
     border: var(--white-color);
     border-radius: 15px;
+    background-color: var(--white-color);
     flex-direction: row;
     width: auto;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
   }
 
   .tag-cmp {
@@ -164,6 +166,11 @@
     object-fit: contain;
     z-index: 1;
   }
+
+  #hero-pic {
+    animation: updown 4s linear infinite;
+  }
+
   .overlay-circle {
     position: absolute;
     left: 0;
@@ -176,5 +183,17 @@
 
   @media screen and (max-width: 1200px) {
     margin: 2rem 0;
+  }
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
   }
 }
