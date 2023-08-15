@@ -36,5 +36,19 @@
 }
 
 .head-text {
-  margin-top: 20px;
+  margin-top: 50px;
+
+  span {
+    font-weight: 800;
+    background: linear-gradient(
+      43deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    ) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    background-clip: text !important;
+    text-fill-color: transparent !important;
+  }
 }
