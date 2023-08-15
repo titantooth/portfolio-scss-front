@@ -169,6 +169,10 @@
 
   #hero-pic {
     animation: updown 4s linear infinite;
+
+    @media screen and (min-width: 450px) {
+      width: 300px;
+    }
   }
 
   .overlay-circle {
