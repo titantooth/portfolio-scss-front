@@ -1,8 +1,7 @@
 import React from "react";
 import "./About.scss";
 import { useState, useEffect } from "react";
-import { appWrap } from "../../wrapper";
-
+import { appWrap, motionWrap } from "../../wrapper";
 import { motion } from "framer-motion";
 import { images } from "../../constants";
 
@@ -62,4 +61,4 @@ const About = () => {
   );
 };
 
-export default appWrap(About, "about");
+export default appWrap(motionWrap(About, "app-about"), "about");

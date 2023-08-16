@@ -4,7 +4,7 @@ import { images } from "../../constants";
 import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { appWrap } from "../../wrapper";
+import { appWrap, motionWrap } from "../../wrapper";
 
 const works = [
   {
@@ -126,4 +126,4 @@ const Work = () => {
   );
 };
 
-export default appWrap(Work, "work");
+export default appWrap(motionWrap(Work, "app-works"), "work");

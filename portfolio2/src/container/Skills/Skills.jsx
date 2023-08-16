@@ -3,7 +3,7 @@ import { images } from "../../constants";
 import { useState, useEffect } from "react";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
-import { appWrap } from "../../wrapper";
+import { appWrap, motionWrap } from "../../wrapper";
 import "./Skills.scss";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 const skill = [
@@ -76,4 +76,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default appWrap(motionWrap(Skills, "app-skills"), "skills");
